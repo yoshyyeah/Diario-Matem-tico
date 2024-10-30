@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'Agency FB';
+  src: url('https://fonts.googleapis.com/css2?family=Agency+FB&display=swap');
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fbf4cc;
+  display: flex;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 3em;
+  margin: 20px 0;
+  animation: entrada 1.5s forwards;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes entrada {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  text-align: center;
+  color: #3d2b29;
+  font-size: 1.8em;
+  margin: 15px 0;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 10px;
+}
+
+.menuOpciones {
+  width: 100%;
+  margin-right: 20px;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  width: 100%;
+  height: 40px;
+  padding: 12.5px;
+  background-color: #FFB6C1;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  font-family: 'Agency FB', sans-serif;
+  transition: background-color 0.3s, transform 0.2s;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #FF69B4;
+  transform: translateY(-2px);
+}
+
+.content-section {
+  display: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  flex: 1;
+}
+
+.content-section.active {
+  display: block;
+}
+
+img {
+  display: block;
+  margin: 10px auto;
+  border: 2px solid #372d2d;
+  border-radius: 10px;
+  max-width: 80%;
+  height: auto;
+}
+
+.factorizacion-example {
+  font-size: 1em;
+  text-align: center;
+  color: #FF4500;
+  font-weight: bold;
+}
+
+.factor-comun-info,
+.factor-agrupacion-info {
+  font-size: 0.9em;
+  text-align: left;
+  margin: 10px 0;
+  color: #4682B4;
+}
+
+.video-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.video-container iframe {
+  width: 80%;
+  height: 400px;
+}
+
+.creditos {
+  font-size: 0.8em;
+  color: #555;
+}

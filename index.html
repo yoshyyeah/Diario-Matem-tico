@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diario Matemático</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="content-section active" id="inicio">
+    <h1>Diario Matemático</h1>
+    <button onclick="mostrarSeccion('menu')">Leer Diario</button>
+  </div>
+
+  <div class="menuOpciones" id="menu" style="display:none;">
+    <h2>Menú de Opciones</h2>
+    <button onclick="mostrarSeccion('productos_notables')">1. Productos Notables</button>
+    <button onclick="mostrarSeccion('factorizacion')">2. Factorización</button>
+    <button onclick="mostrarSeccion('ecuaciones_lineales')">3. Ecuaciones Lineales</button>
+    <button onclick="mostrarSeccion('resolucion_ecuaciones')">4. Resolución de Ecuaciones Cuadráticas</button>
+    <button onclick="mostrarSeccion('circulo_unitario')">5. Círculo Unitario</button>
+    <button onclick="mostrarSeccion('medida_angulos')">6. Medida de Ángulos</button>
+    <button onclick="mostrarSeccion('trigonometria')">7. Trigonometría de Triángulos Rectángulos</button>
+    <button onclick="mostrarSeccion('ley_senos')">8. Ley de Senos</button>
+    <button onclick="mostrarSeccion('ley_cosenos')">9. Ley de Cosenos</button>
+    <button onclick="mostrarSeccion('bibliografia')">10. Bibliografía</button>
+    <button onclick="mostrarSeccion('introduccion')">Video resolución de polinomios</button>
+  </div>
+
+  <div id="introduccion" class="content-section">
+    <h2>Introducción</h2>
+    <p>Este diario tiene como objetivo explorar diversos conceptos matemáticos, proporcionando ejemplos y explicaciones
+      que faciliten el aprendizaje y la comprensión de las matemáticas. Incluye definiciones, ejemplos y videos de
+      apoyo.</p>
+    <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+  </div>
+
+  <!-- Productos Notables -->
+  <div id="productos_notables" class="content-section">
+    <h2>1. Productos Notables</h2>
+    <p><strong>Fundamento teórico:</strong></p>
+    <p>Los productos notables son expresiones algebraicas que siguen reglas fijas y cuyos resultados pueden ser
+      obtenidos mediante fórmulas específicas, sin necesidad de realizar todos los pasos de multiplicación. Estos
+      incluyen el cuadrado de una suma, el cuadrado de una diferencia, el producto de una suma por una diferencia, entre
+      otros.</p>
+    <p><strong>Ejemplo con aplicación:</strong></p>
+    <p>Calcular (a + b)²</p>
+    <p>Aplicando la fórmula:</p>
+    <p>(a + b)² = a² + 2ab + b²</p>
+    <p>Esto simplifica el proceso y evita errores al multiplicar binomios.
+    <p><b>Los productos notables son expresiones algebraicas que vienen de un producto que conocemos porque sigue reglas
+        fijas y cuyo resultado puede ser escrito por simple inspección, es decir, sin verificar la multiplicación. Estas
+        operaciones son fáciles de recordar sin necesidad de efectuar la multiplicación correspondiente.</p>
+</body>
+</p>
+<!-- Video -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G-ym95yl3Es" frameborder="0"
+  allowfullscreen></iframe>
+<div class="video-container">
+  <!-- Aquí puedes insertar el enlace del video de YouTube -->
+  <iframe src="" frameborder="0" allowfullscreen></iframe>
+  <p class="creditos">Créditos: [Prof. Alex. Autor de video]</p>
+</div>
+<button onclick="mostrarSubtema('cuadrado_suma')">Ejemplo: Cuadrado de una Suma</button>
+<button onclick="mostrarSubtema('producto_suma_diferencia')">Ejemplo: Producto de una Suma por una
+  Diferencia</button>
+<button onclick="mostrarSubtema('diferencia_cubos')">Ejemplo: Diferencia de Cubos</button>
+<button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Cuadrado de una Suma -->
+<div id="cuadrado_suma" class="content-section">
+  <h2>1.a Cuadrado de una Suma</h2>
+  <p><strong>Fundamento teórico:</strong></p>
+  <p>El cuadrado de una suma es uno de los productos notables más utilizados en álgebra. Se refiere a la expansión de
+    una expresión de la forma (a + b)² y se expresa mediante la fórmula:</p>
+  <p><strong>(a + b)² = a² + 2ab + b²</strong></p>
+  <p>Esta fórmula indica que al cuadrar la suma de dos términos, el resultado es el cuadrado del primer término, más
+    el doble producto del primero por el segundo, más el cuadrado del segundo término.</p>
+  <p><strong>Ejemplo con aplicación:</strong></p>
+  <p>Calcular (5x + 7)²</p>
+  <p>Aplicamos la fórmula:</p>
+  <ol>
+    <li>Cuadrado del primer término: (5x)² = 25x²</li>
+    <li>Doble producto del primero por el segundo: 2 * 5x * 7 = 70x</li>
+    <li>Cuadrado del segundo término: 7² = 49</li>
+  </ol>
+  <p>Entonces, (5x + 7)² = 25x² + 70x + 49</p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa3G7niK0SpbZySgcGLBlQqdDw7sQYa8kzkw&usqp=CAU"
+    alt="Visualización del cuadrado de una suma">
+  <h1>Cuadrado de la Suma de dos Cantidades</h1>
+  <p>Representamos gráficamente el cuadrado de la suma de dos cantidades positivas:</p>
+  <div class="ejemplo">
+    <h2>Ejemplo 1: (x + 10)²</h2>
+    <p>Cuadrado del primer término: <span class="resultado">x²</span></p>
+    <p>Dos veces el primero por el segundo: <span class="resultado">2(x)(10) = 20x</span></p>
+    <p>Cuadrado del segundo término: <span class="resultado">10² = 100</span></p>
+    <h3>Resultado: (x + 10)² = x² + 20x + 100</h3>
+  </div>
+
+  <div class="ejemplo">
+    <h2>Ejemplo 2: (7a² + 5x³)²</h2>
+    <p>Cuadrado del primer término: <span class="resultado">49a⁴</span></p>
+    <p>Dos veces el primero por el segundo: <span class="resultado">2(7a²)(5x³) = 70a²x³</span></p>
+    <p>Cuadrado del segundo término: <span class="resultado">25x⁶</span></p>
+    <h3>Resultado: (7a² + 5x³)² = 49a⁴ + 70a²x³ + 25x⁶</h3>
+  </div>
+  <p>Video del tema:</p>
+  <b><iframe width="560" height="315" src="https://www.youtube.com/embed/zmz0RjoIl0Y" frameborder="0"
+      allowfullscreen></iframe></b>
+  <!-- Espacio para el video -->
+  <div class="video-container">
+
+    <!-- Aquí puedes insertar el enlace del video de YouTube -->
+    <iframe src="" frameborder="0" allowfullscreen></iframe>
+    <p class="creditos">Créditos: [Nombre del autor]</p>
+  </div>
+
+  <button onclick="mostrarSeccion('productos_notables')">Volver a Productos Notables</button>
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Producto de una Suma por una Diferencia -->
+<div id="producto_suma_diferencia" class="content-section">
+  <h2>1.b Producto de una Suma por una Diferencia</h2>
+  <p><strong>Fundamento teórico:</strong></p>
+  <p>El producto de una suma por una diferencia es otro producto notable que se utiliza para simplificar expresiones
+    de la forma (a + b)(a - b). La fórmula es:</p>
+  <p><strong>(a + b)(a - b) = a² - b²</strong></p>
+  <p>Esto significa que el producto resulta en la diferencia de los cuadrados de los términos.</p>
+  <p><strong>Ejemplo con aplicación:</strong></p>
+  <p>Calcular (x + 2)(x - 2)</p>
+  <p>Aplicamos la fórmula:</p>
+  <p>(x + 2)(x - 2) = x² - 2² = x² - 4</p>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5p3CdLAsW_2KzTgcKpciQwQQ64uv-4dmzCw&s"
+    alt="Visualización del producto de una suma por una diferencia">
+  <p>La <strong>suma por diferencia</strong> es una identidad algebraica que establece que el producto de dos binomios
+    conjugados (una suma y una resta de los mismos términos) es igual a la diferencia de sus cuadrados.</p>
+
+  <h2>Fórmula</h2>
+  <p class="formula">(a + b) · (a - b) = a² - b²</p>
+
+  <h2>Ejemplos</h2>
+
+  <div class="ejemplo">
+    <strong>Ejemplo 1:</strong>
+    <p>(2x + 5) · (2x - 5) = (2x)² - 5² = 4x² - 25</p>
+  </div>
+
+  <div class="ejemplo">
+    <strong>Ejemplo 2:</strong>
+    <p>(3x² - 4x) · (3x² + 4x) = (3x²)² - (4x)² = 9x⁴ - 16x²</p>
+  </div>
+
+  <h2>Demostración</h2>
+  <p>Para demostrar la fórmula, puedes expandir el producto de los binomios conjugados:</p>
+  <p>(a + b)(a - b) = a² - ab + ab - b² = a² - b²</p>
+  <p>Como los términos <strong>-ab</strong> y <strong>ab</strong> se cancelan, te queda:</p>
+  <p class="formula">a² - b²</p>
+
+  <h2>Aplicaciones</h2>
+  <p>Esta identidad es útil para simplificar expresiones algebraicas, factorizar polinomios y resolver ecuaciones. Es un
+    método eficaz para calcular el producto de binomios conjugados de manera rápida.</p>
+
+  <!-- Espacio para el video -->
+  <div class="video-container">
+    <p>Video del tema:</p>
+    <iframe src="https://www.youtube.com/embed/NrHAZ8q6_mY" title="Video sobre Suma por Diferencia"
+      allowfullscreen></iframe>
+    </body>
+    <!-- Aquí puedes insertar el enlace del video de YouTube -->
+    <iframe src="" frameborder="0" allowfullscreen></iframe>
+    <p class="creditos">Créditos: [Nombre del autor]</p>
+  </div>
+
+  <button onclick="mostrarSeccion('productos_notables')">Volver a Productos Notables</button>
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Diferencia de Cubos -->
+<div id="diferencia_cubos" class="content-section">
+  <h2>1.c Diferencia de Cubos</h2>
+  <p><strong>Fundamento teórico:</strong></p>
+  <p>La diferencia de cubos es una identidad que permite factorizar expresiones de la forma a³ - b³. La fórmula es:
+  </p>
+  <p><strong>a³ - b³ = (a - b)(a² + ab + b²)</strong></p>
+  <p>Esto facilita la factorización y simplificación de expresiones cúbicas.</p>
+  <p><strong>Ejemplo con aplicación:</strong></p>
+  <p>Factorizar x³ - 8</p>
+  <p>Observamos que 8 es 2³, entonces:</p>
+  <p>x³ - 2³ = (x - 2)(x² + 2x + 4)</p>
+  <img
+    src="https://profbaptista.wordpress.com/wp-content/uploads/2020/05/factorizacic3b3n-de-suma-y-resta-de-cubos-perfectos.jpg?w=1200"
+    alt="Visualización de la diferencia de cubos">
+  <h2>Suma de dos cubos</h2>
+  <p>Para resolver la suma de dos cubos, es necesario calcular primero la raíz cúbica de ambos términos, donde sus
+    resultados deben ser exactos para aplicar el siguiente procedimiento:</p>
+  <p>La suma de dos cubos es igual a la suma de sus raíces cúbicas por el producto del polinomio formado por el cuadrado
+    de la primera raíz menos el producto de ambas raíces más el cuadrado de la segunda raíz.</p>
+  <p class="formula">Fórmula: <strong>(a + b)(a² - ab + b²)</strong></p>
+
+  <div class="example">
+    <h3>Ejemplo de suma de dos cubos:</h3>
+    <p>Factorizar: x³ + 27</p>
+    <p>Raíces cúbicas: a = x, b = 3.</p>
+    <p>Fórmula: <strong>(x + 3)(x² - 3x + 9)</strong></p>
+  </div>
+
+  <h2>Diferencia de dos cubos</h2>
+  <p>Al igual que en la suma de dos cubos, las raíces cúbicas de los términos que conforman la diferencia deben ser
+    exactas para aplicar el procedimiento:</p>
+  <p>La diferencia de dos cubos es igual a la diferencia de sus raíces cúbicas por el polinomio formado por el cuadrado
+    de la primera raíz más el producto de ambas raíces más el cuadrado de la segunda raíz.</p>
+  <p class="formula">Fórmula: <strong>(a - b)(a² + ab + b²)</strong></p>
+
+  <div class="example">
+    <h3>Ejemplo de diferencia de dos cubos:</h3>
+    <p>Factorizar: x³ - 64</p>
+    <p>Raíces cúbicas: a = x, b = 4.</p>
+    <p>Fórmula: <strong>(x - 4)(x² + 4x + 16)</strong></p>
+  </div>
+
+  <!-- Espacio para el video -->
+  <div class="video-container">
+    <p>Video del tema:</p>
+    <a href="https://youtu.be/X9DT2c1u_GU?si=xjPT2ocloidqfMRR" target="_blank">Ver Video</a>
+    <iframe src="" frameborder="0" allowfullscreen></iframe>
+    <p class="creditos">Créditos: [Nombre del autor]</p>
+  </div>
+
+  <button onclick="mostrarSeccion('productos_notables')">Volver a Productos Notables</button>
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Factorización -->
+<div id="factorizacion" class="content-section">
+  <h2>2. Factorización</h2>
+  <p>Selecciona un subtema para ver más ejemplos y explicaciones.</p>
+  <button onclick="mostrarSubtema('factor_comun')">2.a Factor Común</button>
+  <button onclick="mostrarSubtema('factor_agrupacion')">2.b Factor Común por Agrupación</button>
+  <button onclick="mostrarSubtema('trinomios')">2.c Trinomios</button>
+  <button onclick="mostrarSubtema('diferencia_cuadrados_factorizacion')">2.d Diferencia de Cuadrados</button>
+  <button onclick="mostrarSubtema('suma_diferencia_cubos_factorizacion')">2.e Suma y Diferencia de Cubos
+    Perfectos</button>
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Factor Común -->
+<div id="factor_comun" class="content-section">
+  <h2>2.a Factor Común</h2>
+  <p class="factor-comun-info"><strong>Fundamento teórico:</strong></p>
+  <p class="factor-comun-info">El factor común es un número o expresión que se puede extraer de varios términos. Es el
+    primer caso de factorización y consiste en identificar y extraer el mayor factor común de todos los términos de
+    una expresión algebraica.</p>
+  <p><strong>Ejemplo con aplicación:</strong></p>
+  <p>Factorizar la expresión: 12x³y + 18x²y² - 24xy³</p>
+  <p><strong>Paso 1: Identificar el factor común.</strong></p>
+  <ul>
+    <li>Coeficientes: MCD de 12, 18 y -24 es 6.</li>
+    <li>Variables: Menor exponente de x es 1, y de y es 1.</li>
+  </ul>
+  <p>El factor común es 6xy.</p>
+  <p><strong>Paso 2: Dividir cada término por el factor común.</strong></p>
+  <ul>
+    <li>12x³y ÷ 6xy = 2x²</li>
+    <li>18x²y² ÷ 6xy = 3xy</li>
+    <li>-24xy³ ÷ 6xy = -4y²</li>
+  </ul>
+  <p><strong>Expresión factorizada:</strong></p>
+  <p class="factorizacion-example">12x³y + 18x²y² - 24xy³ = 6xy(2x² + 3xy - 4y²)</p>
+  <h2>Imagen visual</h2>
+  <img
+    src="https://media.gcflearnfree.org/content/610d779f4180fe0f2cd4c52a_08_06_2021/Factorizacio%CC%81n-por-factor-comu%CC%81n.png"
+    alt="Visualización de la factorización por factor común">
+
+  <!-- Video -->
+  <div class="video-container">
+    <p>Video del tema:</p>
+    <iframe src="" frameborder="0" allowfullscreen></iframe>
+    <p class="creditos">Créditos: [Nombre del autor]</p>
+  </div>
+
+  <button onclick="mostrarSeccion('factorizacion')">Volver a Factorización</button>
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Factor Común por Agrupación -->
+<div id="factor_agrupacion" class="content-section">
+  <h2>Factor Común por Agrupación</h2>
+  <p class="factor-agrupacion-info"><strong>Fundamento teórico:</strong></p>
+  <p class="factor-agrupacion-info">El factor común por agrupación se utiliza cuando no todos los términos de un
+    polinomio tienen un factor común, pero sí se pueden agrupar en términos que sí lo tienen. Se agrupan los términos
+    de manera que se pueda extraer un factor común de cada grupo. h2>Factor Común por Agrupación de Términos
+  <p>Se llama factor común por agrupación de términos si los términos de un polinomio pueden reunirse en grupos de
+    términos con un factor común diferente en cada grupo.</p>
+  <p>Cuando pueden reunirse en grupos de igual número de términos, se le saca en cada uno de ellos el factor común. Si
+    queda la misma expresión en cada uno de los grupos entre paréntesis, se la saca este grupo como factor común,
+    quedando así una multiplicación de polinomios.</p>
+
+  <h3>Ejemplo:</h3>
+  <p>Dado el polinomio:</p>
+  <p><strong>2ax + 2bx - ay + 5a - by + 5b</strong></p>
+  <p>Agrupamos los términos que tienen un factor común:</p>
+  <p><strong>(2ax - ay + 5a) + (2bx - by + 5b)</strong></p>
+  <p>Sacamos el factor común de cada grupo:</p>
+  <p><strong>a(2x - y + 5) + b(2x - y + 5)</strong></p>
+  <p>Como las expresiones encerradas entre paréntesis son iguales, se tiene:</p>
+  <p><strong>(2x - y + 5)(a + b)</strong></p>
+
+  <h3>Ejemplos Adicionales:</h3>
+  <ol>
+    <li>
+      <strong>Ejemplo 1:</strong><br>
+      17ax - 17mx + 3ay - 3my + 7az - 7mz = a(17x + 3y + 7z) - m(17x + 3y + 7z) = (17x + 3y + 7z)(a - m)
+    </li>
+    <li>
+      <strong>Ejemplo 2:</strong><br>
+      m(x + 2) - x - 2 + 3(x + 2) = (x + 2)(m + 3) - 1(x + 2) = (x + 2)[(m + 3) - 1] = (x + 2)(m + 2)
+    </li>
+  </ol>
+
+  <h3>Presentación de Ejemplo Dinámico:</h3>
+  <p><a href="https://www.aulafacil.com/algebra/curso/present.gif" target="_blank">Ver Ejemplo Dinámico</a></p>
+  <p><strong>Ejemplo con aplicación:</strong></p>
+  <p>Factorizar la expresión: ax + ay + bx + by</p>
+  <p><strong>Paso 1: Agrupar términos.</strong></p>
+  <p>(ax + ay) + (bx + by)</p>
+  <p><strong>Paso 2: Extraer el factor común de cada grupo.</strong></p>
+  <ul>
+    <li>Primer grupo: a(x + y)</li>
+    <li>Segundo grupo: b(x + y)</li>
+  </ul>
+  <p><strong>Paso 3: Factor común entre los dos términos resultantes.</strong></p>
+  <p>(a + b)(x + y)
+  </p>
+
+  <h2>Imagen visual</h2>
+  <img src="factoporagru.png" alt="Visualización de la factorización por agrupación">
+  <img src="factoporagru2.png" alt="Visualización de la factorización por agrupación">
+
+  <!-- Video -->
+  <div class="video-container">
+    <p>Video del tema:</p>
+    <iframe src="" frameborder="0" allowfullscreen></iframe>
+    <p class="creditos">Créditos: [Nombre del autor]</p>
+  </div>
+
+  <button onclick="mostrarSeccion('factorizacion')">Volver a Factorización</button>
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Trinomios -->
+<div id="trinomios" class="content-section">
+  <h2>2.c Trinomios</h2>
+  <p class="factor-agrupacion-info"><strong>Fundamento teórico:</strong></p>
+  <p class="factor-agrupacion-info">Los trinomios son expresiones algebraicas con tres términos. Existen diferentes
+    tipos, como trinomios cuadrados perfectos y trinomios de la forma ax² + bx + c. La factorización de trinomios es
+    esencial para resolver ecuaciones cuadráticas.</p>
+  <h3>Métodos para Factorizar Trinomios</h3>
+  <p class="factor-agrupacion-info">Existen diferentes métodos para factorizar trinomios:</p>
+  <ul class="factorizacion-metodos">
+    <li><strong>Factorización Simple:</strong> Se buscan dos números que multiplicados den 'ac' y sumados den 'b'.
+    </li>
+    <li><strong>Completación de Cuadrados:</strong> Transformar el trinomio en un cuadrado perfecto.</li>
+    <li><strong>Fórmula General:</strong> Utilizar la fórmula cuadrática para encontrar las raíces.</li>
+  </ul>
+
+  <h3>Ejemplo con aplicación:</h3>
+  <p class="factorizacion-example">Factorizar x² + 5x + 6</p>
+  <p><strong>Paso 1:</strong> Encontrar dos números que multiplicados den 6 y sumados den 5. Los números son 2 y 3.
+  </p>
+  <p><strong>Paso 2:</strong> Expresar el trinomio como producto de binomios.</p>
+  <p>(x + 2)(x + 3)</p>
+  <h2>Imagen visual</h2>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5p3CdLAsW_2KzTgcKpciQwQQ64uv-4dmzCw&s"
+    alt="Visualización de la factorización de trinomios">
+
+  <!-- Video -->
+  <div class="video-container">
+    <p>Video del tema:</p>
+    <iframe src="" frameborder="0" allowfullscreen></iframe>
+    <p class="creditos">Créditos: [Nombre del autor]</p>
+  </div>
+
+  <button onclick="mostrarSeccion('factorizacion')">Volver a Factorización</button>
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Diferencia de Cuadrados en Factorización -->
+<div id="diferencia_cuadrados_factorizacion" class="content-section">
+  <h2>2.d Diferencia de Cuadrados</h2>
+  <p><strong>Fundamento teórico:</strong></p>
+  <p>La diferencia de cuadrados es una identidad notable que permite factorizar expresiones de la forma a² - b² = (a +
+    b)(a - b). Es útil para simplificar expresiones y resolver ecuaciones.</p>
+  <p><strong>Ejemplo con aplicación:</strong></p>
+  <p>Factorizar x² - 9</p>
+  <p>Observamos que 9 es 3², entonces:</p>
+  <p>x² - 3² = (x + 3)(x - 3)
+  <p>Una diferencia de cuadrados es el resultado del producto de dos binomios conjugados.</p>
+  <p>Esto implica que, para factorizar una diferencia de cuadrados, se extraen las raíces cuadradas de los términos y se
+    forma un binomio. Finalmente, se expresa el producto de este binomio por su conjugado.</p>
+
+  <h3>Ejemplos</h3>
+  <ol>
+    <li>
+      <strong>Ejemplo 1:</strong><br>
+      Se extraen las raíces de los términos:<br>
+      <em>Raíces: √a y √b</em><br>
+      Se forma el binomio: <em>(√a - √b)</em> y se multiplica por su conjugado: <em>(√a + √b)</em>, por lo que:
+      <strong>(√a - √b)(√a + √b)</strong>
+    </li>
+    <li>
+      <strong>Ejemplo 2:</strong><br>
+      Las raíces de los términos son:<br>
+      <em>Raíces: √c y √d</em><br>
+      Se forma el binomio: <em>(√c - √d)</em> y se multiplica por su conjugado: <em>(√c + √d)</em>, así que: <strong>(√c
+        - √d)(√c + √d)</strong>
+    </li>
+    <!-- Agrega más ejemplos según sea necesario -->
+  </ol>
+
+  <h3>Conclusión</h3>
+  <p>Una diferencia de los cuadrados de dos términos algebraicos se factoriza como el producto de dos binomios
+    conjugados, cuyos términos son las raíces cuadradas de los que están elevados al cuadrado.</p>
+  <h2>Imagen visual</h2>
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Diferencia_de_cuadrados.svg/300px-Diferencia_de_cuadrados.svg.png"
+    alt="Visualización de la diferencia de cuadrados">
+
+
+  <!-- Video -->
+  <div class="video-container">
+    <p>Video del tema:</p>
+    <!-- Aquí puedes insertar el enlace del video de YouTube -->
+    <iframe src="" frameborder="0" allowfullscreen></iframe>
+    <p class="creditos">Créditos: [Nombre del autor]</p>
+  </div>
+  <button onclick="mostrarSeccion('factorizacion')">Volver a Factorización</button>
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Suma y Diferencia de Cubos Perfectos en Factorización -->
+<div id="suma_diferencia_cubos_factorizacion" class="content-section">
+  <h2>2.e Suma y Diferencia de Cubos Perfectos</h2>
+  <p><strong>Fundamento teórico:</strong></p>
+  <p>Las identidades de suma y diferencia de cubos permiten factorizar expresiones cúbicas:</p>
+  <ul>
+    <li><strong>Suma de cubos:</strong> a³ + b³ = (a + b)(a² - ab + b²)</li>
+    <li><strong>Diferencia de cubos:</strong> a³ - b³ = (a - b)(a² + ab + b²)</li>
+  </ul>
+  <p><strong>Ejemplo con aplicación:</strong></p>
+  <p>Factorizar x³ + 27</p>
+  <p>Observamos que 27 es 3³, entonces:</p>
+  <p>x³ + 3³ = (x + 3)(x² - 3x + 9)</p>
+  <h2>Imagen visual</h2>
+  <img src="https://www.lifeder.com/wp-content/uploads/2020/02/diferencia-de-cubos-1.jpg"
+    alt="Visualización de suma y diferencia de cubos">
+
+  <!-- Video -->
+  <div class="video-container">
+    <p>Video del tema:</p>
+    <!-- Aquí puedes insertar el enlace del video de YouTube -->
+    <iframe src="" frameborder="0" allowfullscreen></iframe>
+    <p class="creditos">Créditos: [Nombre del autor]</p>
+  </div>
+  <button onclick="mostrarSeccion('factorizacion')">Volver a Factorización</button>
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Ecuaciones Lineales -->
+<div id="ecuaciones_lineales" class="content-section">
+  <h2>3. Ecuaciones Lineales</h2>
+  <p><strong>Fundamento teórico:</strong></p>
+  <p>Las ecuaciones lineales son ecuaciones de primer grado que se representan en la forma ax + b = 0. Su solución
+    implica encontrar el valor de x que satisface la igualdad.</p>
+  <p><strong>Ejemplo con aplicación:</strong></p>
+  <p>Resolver 2x + 4 = 0</p>
+  <p><strong>Solución:</strong></p>
+  <p>2x + 4 = 0</p>
+  <p>2x = -4</p>
+  <p>x = -2</p>
+  <h2>Imagen visual</h2>
+  <img src="https://educapedia.org/wp-content/uploads/2023/12/image-87.png" alt="Visualización de ecuaciones lineales">
+
+  <!-- Video -->
+  <div class="video-container">
+    <p>Video del tema:</p>
+    <!-- Aquí puedes insertar el enlace del video de YouTube -->
+    <iframe src="" frameborder="0" allowfullscreen></iframe>
+    <p class="creditos">Créditos: [Nombre del autor]</p>
+  </div>
+
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Resolución de Ecuaciones Cuadráticas -->
+<div id="resolucion_ecuaciones" class="content-section">
+  <h2>4. Resolución de Ecuaciones Cuadráticas</h2>
+  <p><strong>Fundamento teórico:</strong></p>
+  <p>Las ecuaciones cuadráticas tienen la forma ax² + bx + c = 0 y pueden resolverse mediante varios métodos:</p>
+  <button onclick="mostrarSubtema('completacion_cuadrados')">4.a Completación de Cuadrados</button>
+  <button onclick="mostrarSubtema('formula_cuadratica')">4.b Fórmula Cuadrática</button>
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Completación de Cuadrados -->
+<div id="completacion_cuadrados" class="content-section">
+  <h2>4.a Completación de Cuadrados</h2>
+  <p><strong>Fundamento teórico:</strong></p>
+  <p>Este método consiste en transformar una ecuación cuadrática en un trinomio cuadrado perfecto para facilitar su
+    resolución.</p>
+  <p><strong>Ejemplo con aplicación:</strong></p>
+  <p>Resolver x² + 6x + 5 = 0</p>
+  <p><strong>Paso 1:</strong> Mover el término constante al otro lado:</p>
+  <p>x² + 6x = -5</p>
+  <p><strong>Paso 2:</strong> Completar el cuadrado sumando (b/2)² a ambos lados:</p>
+  <p>(6/2)² = 9</p>
+  <p>x² + 6x + 9 = -5 + 9</p>
+  <p>x² + 6x + 9 = 4</p>
+  <p><strong>Paso 3:</strong> Escribir como cuadrado perfecto:</p>
+  <p>(x + 3)² = 4</p>
+  <p><strong>Paso 4:</strong> Resolver para x:</p>
+  <p>x + 3 = ±2</p>
+  <p>x = -1, x = -5</p>
+
+  <!-- Video -->
+  <div class="video-container">
+    <p>Video del tema:</p>
+    <!-- Aquí puedes insertar el enlace del video de YouTube -->
+    <iframe src="" frameborder="0" allowfullscreen></iframe>
+    <p class="creditos">Créditos: [Nombre del autor]</p>
+  </div>
+
+  <button onclick="mostrarSeccion('resolucion_ecuaciones')">Volver a Resolución de Ecuaciones</button>
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Fórmula Cuadrática -->
+<div id="formula_cuadratica" class="content-section">
+  <h2>4.b Fórmula Cuadrática</h2>
+  <p><strong>Fundamento teórico:</strong></p>
+  <p>La fórmula cuadrática permite encontrar las soluciones de cualquier ecuación cuadrática:</p>
+  <p><strong>Fórmula:</strong> x = [-b ± √(b² - 4ac)] / (2a)</p>
+  <p><strong>Ejemplo con aplicación:</strong></p>
+  <p>Resolver 2x² - 4x - 6 = 0</p>
+  <p><strong>Paso 1:</strong> Identificar a, b y c:</p>
+  <p>a = 2, b = -4, c = -6</p>
+  <p><strong>Paso 2:</strong> Sustituir en la fórmula:</p>
+  <p>x = [-(-4) ± √((-4)² - 4 * 2 * (-6))] / (2 * 2)</p>
+  <p>x = [4 ± √(16 + 48)] / 4</p>
+  <p>x = [4 ± √64] / 4</p>
+  <p>x = [4 ± 8] / 4</p>
+  <p><strong>Soluciones:</strong></p>
+  <p>x₁ = (4 + 8) / 4 = 12 / 4 = 3</p>
+  <p>x₂ = (4 - 8) / 4 = (-4) / 4 = -1</p>
+
+  <!-- Video -->
+  <div class="video-container">
+    <p>Video del tema:</p>
+    <!-- Aquí puedes insertar el enlace del video de YouTube -->
+    <iframe src="" frameborder="0" allowfullscreen></iframe>
+    <p class="creditos">Créditos: [Nombre del autor]</p>
+  </div>
+
+  <button onclick="mostrarSeccion('resolucion_ecuaciones')">Volver a Resolución de Ecuaciones</button>
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Círculo Unitario -->
+<div id="circulo_unitario" class="content-section">
+  <h2>5. Círculo Unitario</h2>
+  <p><strong>Fundamento teórico:</strong></p>
+  <p>El círculo unitario es un círculo con centro en el origen (0,0) y radio 1. Es fundamental en trigonometría para
+    definir las funciones seno y coseno en términos de coordenadas en el plano. El círculo unitario es utilizado en
+    matemáticas para relacionar a las funciones trigonométricas básicas en una manera más fácil. Dado que el radio del
+    círculo unitario es 1, esto facilita la aplicación del teorema de Pitágoras y resulta en que las coordenadas en x
+    sean equivalentes al coseno y las coordenadas en y sean equivalentes al seno.</p>
+  <p><strong>Ejemplo con aplicación:</strong></p>
+  <p>En el círculo unitario, el punto correspondiente a un ángulo de 45° tiene coordenadas (√2/2, √2/2).</p>
+  <h2>Imagen visual</h2>
+  <img
+    src="https://sp-uploads.s3.amazonaws.com/uploads%2Fservices%2F3934272%2F20220518205449_62855d1998c1a_circulo_unitariopage1.jpg"
+    alt="Círculo Unitario">
+  <b>
+    <h1>Fórmula para el Círculo Unitario</h1>
+    <p>La ecuación de un círculo está dada por la forma general:</p>
+    <p>
+      <strong>(x - h)<sup>2</sup> + (y - k)<sup>2</sup> = r<sup>2</sup></strong>
+    </p>
+    <p>
+      donde <strong>(h, k)</strong> son las coordenadas del centro del círculo y <strong>r</strong> es el radio.
+      Entonces,<b>
+        <h1>Fórmula para el Círculo Unitario</h1>
+        <strong>(x, y)</strong> representan a los puntos en el círculo que se ubican a una distancia <strong>r</strong>
+        desde el centro.
+    </p>
+    <p>
+      En el caso del círculo unitario, el centro está ubicado en <strong>(0, 0)</strong> y el radio es
+      <strong>1</strong>. Esto significa que la fórmula del círculo unitario es:
+    </p>
+    <p>
+      <strong>x<sup>2</sup> + y<sup>2</sup> = 1</strong>
+  </b>
+  </p>
+  <img src="https://www.neurochispas.com/wp-content/uploads/2021/05/formula-del-circulo-unitario.png"
+    alt="Fórmula del círculo unitario" width="600">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/KVSO8-IyPFo" title="Video de YouTube"
+    allow="autoplay; encrypted-media" allowfullscreen>
+  </iframe>
+
+  <!-- Video -->
+  <div class="video-container">
+    <p>Video del tema</p>
+    <!-- Aquí puedes insertar el enlace del video de YouTube -->
+    <iframe src="" frameborder="0" allowfullscreen></iframe>
+    <p class="creditos">Créditos: [Nombre del autor, autodidacta]</p>
+  </div>
+
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Medida de Ángulos -->
+<div id="medida_angulos" class="content-section">
+  <h2>6. Medida de Ángulos</h2>
+  <p><strong>Fundamento teórico:</strong></p>
+  <p>Los ángulos pueden medirse en grados y radianes. Un círculo completo tiene 360 grados o 2π radianes. <br>Un grado
+    sexagesimal es la amplitud del ángulo resultante de dividir la circunferencia en 360 partes iguales.<br> Aplicando
+    el sistema sexagesimal se tiene que 1 grado sexagesimal es igual a 60 minutos y 1 minuto es igual a 60 segundos De
+    lo anterior se sigue que 1 grado = 3600´´ </p>
+  <h1>Ángulos</h1>
+  <img src="https://concepto.de/wp-content/uploads/2013/08/angulos-prueba-1-e1620161637812.png" alt="Tipos de ángulos"
+    width="600">
+
+  <p><br>Los ángulos se suelen medir en grados o en radianes. En el caso de la medición en grados, su valor oscila entre
+    0 y 360 grados (y los valores en 0 y 360 grados coinciden). Para referirnos a ellos, podemos escribir 90 grados, o
+    lo que es lo mismo, 90º.</p>
+  <img src="https://www2.ual.es/jardinmatema/wp-content/uploads/2021/11/angulos_imagen3.png"
+    alt="Imagen de los tipos de ángulos" width="600">
+  <h1>Video de YouTube</h1>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/cjauJRqqgLg" title="Video de YouTube"
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;    picture-in-picture"
+    allowfullscreen>
+  </iframe>
+  <button onclick="mostrarSubtema('medida_radianes')">6.a Medida en Radianes</button>
+  <button onclick="mostrarSubtema('relacion_radianes_grados')">6.b Relación entre Radianes y Grados</button>
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Medida en Radianes -->
+<div id="medida_radianes" class="content-section">
+  <h2>6.a Medida en Radianes</h2>
+  <p><strong>Fundamento teórico:</strong></p>
+  <p>Un radián es la medida del ángulo central que subtiende un arco igual en longitud al radio del círculo.</p>
+  <p><strong>Ejemplo con aplicación:</strong></p>
+  <p>180° = π radianes</p>
+  <p>Por lo tanto, un ángulo de 90° es π/2 radianes.</p>
+  <h1>Medida de Radianes</h1>
+  <p>
+    La medida del ángulo en un círculo donde la longitud del arco es igual al radio.
+  </p>
+
+  <h2>¿Qué son los Radianes?</h2>
+  <p>
+    Hasta ahora, hemos utilizado grados para medir ángulos. Un grado es 1/360 de una rotación completa alrededor de un
+    círculo. Los radianes son unidades alternas utilizadas para medir ángulos en trigonometría.
+  </p>
+  <p>
+    Un radian (rad abreviado) es el ángulo creado al doblar la longitud del radio alrededor del arco de un círculo. Por
+    tanto, se necesita un poco más de 6 radianes para completar una rotación, ya que una rotación completa (360 grados)
+    equivale a <strong>2π radianes</strong>, aproximadamente 6.28 radianes.
+  </p>
+
+  <h2>Conversión de Grados a Radianes</h2>
+  <div class="example">
+    <p><strong>360 grados = 2π radianes</strong></p>
+    <p><strong>180 grados = π radianes</strong></p>
+    <p><strong>90 grados = π/2 radianes</strong></p>
+  </div>
+
+  <h2>Ángulos Cuadránticos</h2>
+  <p>
+    Extendiendo la medida del radián más allá del primer cuadrante, los ángulos cuadránticos son los siguientes:
+  </p>
+  <div class="example">
+    <p><strong>270 grados = 3π/2 radianes</strong></p>
+  </div>
+
+  <!-- Video -->
+  <div class="video-container">
+    <p>Video del tema:</p>
+    <!-- Aquí puedes insertar el enlace del video de YouTube -->
+    <iframe src="" frameborder="0" allowfullscreen></iframe>
+    <p class="creditos">Créditos: [Nombre del autor]</p>
+  </div>
+
+  <button onclick="mostrarSeccion('medida_angulos')">Volver a Medida de Ángulos</button>
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Relación entre Radianes y Grados -->
+<div id="relacion_radianes_grados" class="content-section">
+  <h2>6.b Relación entre Radianes y Grados</h2>
+  <p><strong>Fundamento teórico:</strong></p>
+  <p>La conversión entre radianes y grados se realiza mediante la proporción: 180° = π radianes.</p>
+  <p><strong>Ejemplo con aplicación:</strong></p>
+  <p>Convertir 60° a radianes:</p>
+  <p>60° * (π rad / 180°) = π/3 radianes</p>
+
+  <h1>Relación entre Grados y Radianes</h1>
+
+  <p>
+    Los radianes y los grados son dos unidades de medida para ángulos. La relación entre ellos se puede entender a
+    través de la fórmula de la longitud del arco.
+  </p>
+
+  <h2>Fórmula de la Longitud del Arco</h2>
+  <p>
+    La longitud del arco (l) en un círculo de radio (r) y ángulo (θ) en radianes es:
+  </p>
+  <img src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*I-31um8kvF0wj3KSaOk08g.jpeg"
+    alt="Fórmula de la Longitud del Arco">
+
+  <p>
+    Un círculo completo tiene una circunferencia de <strong>2πr</strong> y un ángulo de 360º. Usando la fórmula de la
+    longitud del arco, podemos demostrar que:
+  </p>
+  <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*P4bZ1UeOxBN2pTwYIV44Yw.jpeg"
+    alt="Demostración de la Relación">
+
+  <h2>Factor de Conversión</h2>
+  <div class="factor-conversion">
+    <p>Los factores de conversión entre grados y radianes son:</p>
+    <p><strong>1 radian ≈ 57.2958 grados</strong></p>
+    <p><strong>1 grado = π/180 radianes</strong></p>
+  </div>
+  <img src="https://miro.medium.com/v2/resize:fit:786/format:webp/1*MaICP9d8iqR3C6BEdoRj-A.jpeg"
+    alt="Factores de Conversión">
+  <!-- Video -->
+  <div class="video-container">
+    <p>Video del tema:</p>
+    <!-- Aquí puedes insertar el enlace del video de YouTube -->
+    <iframe src="" frameborder="0" allowfullscreen></iframe>
+    <p class="creditos">Créditos: [Nombre del autor]</p>
+  </div>
+
+  <button onclick="mostrarSeccion('medida_angulos')">Volver a Medida de Ángulos</button>
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Trigonometría de Triángulos Rectángulos -->
+<div id="trigonometria" class="content-section">
+  <h2>7. Trigonometría de Triángulos Rectángulos</h2>
+  <p><strong>Fundamento teórico:</strong></p>
+  <p>La trigonometría de triángulos rectángulos se basa en las razones trigonométricas y el Teorema de Pitágoras para
+    resolver problemas relacionados con ángulos y lados.
+  <p>En esta sección, podrá:</p>
+  <ul>
+    <li>Utilizar los triángulos rectángulos para evaluar las funciones trigonométricas.</li>
+    <li>Hallar los valores de la función para 30° (π/6), 45° (π/4) y 60° (π/3).</li>
+    <li>Utilizar cofunciones de ángulos complementarios.</li>
+    <li>Utilizar las definiciones de las funciones trigonométricas de cualquier ángulo.</li>
+    <li>Utilizar la trigonometría del triángulo rectángulo para resolver problemas aplicados.</li>
+  </ul>
+
+  <p>Anteriomente hemos definido el seno y el coseno de un ángulo en términos de las coordenadas de un punto del círculo
+    unitario intersecado por el lado terminal del ángulo:</p>
+  <p><strong>cos(t) = x</strong><br>
+    <strong>sen(t) = y</strong>
+  </p>
+
+  <p>En esta sección, veremos otra forma de definir las funciones trigonométricas mediante las propiedades de los
+    triángulos rectángulos.</p>
+
+  <h2>Usar Triángulos Rectángulos para Evaluar Funciones Trigonométricas</h2>
+  <p>En secciones anteriores, hemos utilizado un círculo unitario para definir las funciones trigonométricas. En esta
+    sección, ampliaremos esas definiciones para aplicarlas a los triángulos rectángulos. El valor de la función seno o
+    coseno de <strong>t</strong> es su valor en <strong>t</strong> radianes. En primer lugar, tenemos que crear nuestro
+    triángulo rectángulo. La Figura 1 muestra un punto en un círculo unitario de radio 1. Si dejamos caer un segmento de
+    línea vertical desde el punto (x,y) al eje x, tenemos un triángulo rectángulo cuyo lado vertical tiene longitud
+    <strong>y</strong> y cuyo lado horizontal tiene una longitud <strong>x</strong>.</p>
+
+  <p>Podemos utilizar este triángulo rectángulo para redefinir el seno, el coseno y las demás funciones trigonométricas
+    como cocientes de los lados de un triángulo rectángulo. <a
+      href="https://openstax.org/apps/archive/20240910.161227/resources/7eabca2ac908fd12b652b3d0bd54cc449db646ac">Ver
+      imagen</a>.</p>
+
+  <p>Estas relaciones se siguen aplicando a los lados de un triángulo rectángulo cuando no hay ningún círculo unitario y
+    cuando el triángulo no está en posición estándar y no se grafica con las coordenadas (x,y). Para utilizar estas
+    relaciones libremente, daremos a los lados designaciones más genéricas: En lugar de <strong>x</strong>, llamaremos
+    lado adyacente al ángulo al lado del ángulo dado <strong>t</strong>. (Adyacente significa “junto a”). En lugar de
+    <strong>y</strong>, llamaremos lado opuesto al ángulo dado al lado más distante del ángulo <strong>t</strong>.
+    Finalmente, en lugar de <strong>1</strong>, llamaremos hipotenusa al lado de un triángulo rectángulo opuesto al
+    ángulo recto. Estos lados están marcados en la <a
+      href="https://openstax.org/apps/archive/20240910.161227/resources/e1b023ddf6ba031d5a703f4d8ab221050e0a2ede">Figura
+      2</a>.</p>
+  <button onclick="mostrarSubtema('razones_trigonometricas')">7.a Razones Trigonométricas</button>
+  <button onclick="mostrarSubtema('teorema_pitagoras')">7.b Teorema de Pitágoras</button>
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Razones Trigonométricas -->
+<div id="razones_trigonometricas" class="content-section">
+  <h2>7.a Razones Trigonométricas</h2>
+  <p><strong>Fundamento teórico:</strong></p>
+  <p>Las razones trigonométricas relacionan los ángulos con los lados de un triángulo rectángulo:</p>
+  <ul>
+    <li>Seno (sin): cateto opuesto / hipotenusa</li>
+    <li>Coseno (cos): cateto adyacente / hipotenusa</li>
+    <li>Tangente (tan): cateto opuesto / cateto adyacente</li>
+  </ul>
+  <p><strong>Ejemplo con aplicación:</strong></p>
+  <p>En un triángulo rectángulo, si el ángulo θ es tal que sin θ = 0.6 y la hipotenusa es 10 cm, entonces el cateto
+    opuesto es:</p>
+  <p>cateto opuesto = sin θ * hipotenusa = 0.6 * 10 = 6 cm</p>
+  <h2>Imagen visual</h2>
+  alt="Razones trigonométricas en triángulo rectángulo">
+  <p>En un triángulo rectángulo, las razones trigonométricas fundamentales son el seno, el coseno y la tangente. Estas
+    razones se definen de la siguiente manera:</p>
+
+  <h2>Seno</h2>
+  <img class="imagen" src="https://cdn-blog.superprof.com/blog_ressources_es/wp-content/uploads/2019/07/sen-2.png.webp"
+    alt="Seno en un triángulo rectángulo">
+  <div class="definicion">
+    <p>El seno del ángulo B es la razón entre el cateto opuesto al ángulo y la hipotenusa. Se denota por <strong>sen
+        B</strong>.</p>
+  </div>
+
+  <h2>Coseno</h2>
+  <img class="imagen" src="https://cdn-blog.superprof.com/blog_ressources_es/wp-content/uploads/2019/07/cos-1.png.webp"
+    alt="Coseno en un triángulo rectángulo">
+  <div class="definicion">
+    <p>El coseno del ángulo B es la razón entre el cateto adyacente o contiguo al ángulo y la hipotenusa. Se denota por
+      <strong>cos B</strong>.</p>
+  </div>
+
+  <h2>Tangente</h2>
+  <img class="imagen" src="https://cdn-blog.superprof.com/blog_ressources_es/wp-content/uploads/2019/07/tan.png.webp"
+    alt="Tangente en un triángulo rectángulo">
+  <div class="definicion">
+    <p>La tangente del ángulo B es la razón entre el cateto opuesto y el cateto adyacente. Se denota por <strong>tan
+        B</strong>.</p>
+  </div>
+  <h2>Tangente</h2>
+  <div class="definicion">
+    <p>La tangente del ángulo B es la razón entre el cateto opuesto al ángulo y el cateto adyacente al ángulo. Se denota
+      por <strong>tan B</strong> o <strong>tg B</strong>.</p>
+    <img
+      src="https://latex.codecogs.com/gif.latex?\tan%20B=\frac{\text{sen%20}B}{\cos%20B}=\frac{\text{cateto%20opuesto}}{\text{cateto%20adyacente}}=\frac{{\color{Red}%20\text{b}}}{{\color{DarkGreen}%20\text{c}}}"
+      alt="Definición de tangente">
+  </div>
+
+  <h2>Cosecante</h2>
+  <div class="definicion">
+    <p>La cosecante del ángulo B es la razón inversa del seno de B. Se denota por <strong>csc B</strong> o <strong>cosec
+        B</strong>.</p>
+    <img class="imagen" src="https://cdn-blog.superprof.com/blog_ressources_es/wp-content/uploads/2019/07/csc.png.webp"
+      alt="Cosecante">
+  </div>
+
+  <h2>Cotangente</h2>
+  <div class="definicion">
+    <p>La cotangente del ángulo B es la razón inversa de la tangente de B. Se denota por <strong>cot B</strong> o
+      <strong>ctg B</strong>.</p>
+    <img class="imagen" src="https://cdn-blog.superprof.com/blog_ressources_es/wp-content/uploads/2019/07/sec.png.webp"
+      alt="Cotangente">
+  </div>
+
+  <h2>Acrónimos y Definiciones</h2>
+  <table class="matriz">
+    <thead>
+      <tr>
+        <th>Acrónimo</th>
+        <th>Descripción verbal</th>
+        <th>Definición matemáticas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>S<sup>O</sup>H</td>
+        <td>Seno es <span style="color: Red;">O</span>puesto sobre <span style="color: Blue;">H</span>ipotenusa</td>
+        <td>sen α = <span style="color: Red;">opuesto</span> / <span style="color: Blue;">hipotenusa</span></td>
+      </tr>
+      <tr>
+        <td>C<sup>A</sup>H</td>
+        <td>Coseno es <span style="color: DarkGreen;">A</span>dyacente sobre <span
+            style="color: Blue;">H</span>ipotenusa</td>
+        <td>cos α = <span style="color: DarkGreen;">adyacente</span> / <span style="color: Blue;">hipotenusa</span></td>
+      </tr>
+      <tr>
+        <td>T<sup>O</sup>A</td>
+        <td>Tangente es <span style="color: Red;">O</span>puesto sobre <span style="color: DarkGreen;">A</span>dyacente
+        </td>
+        <td>tan α = <span style="color: Red;">opuesto</span> / <span style="color: DarkGreen;">adyacente</span></td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- Video -->
+  <div class="video-container">
+    <p>Video del tema:</p>
+    <!-- Aquí puedes insertar el enlace del video de YouTube -->
+    <iframe src="" frameborder="0" allowfullscreen></iframe>
+    <p class="creditos">Créditos: [Nombre del autor]</p>
+  </div>
+
+  <button onclick="mostrarSeccion('trigonometria')">Volver a Trigonometría</button>
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Teorema de Pitágoras -->
+<div id="teorema_pitagoras" class="content-section">
+  <h2>7.b Teorema de Pitágoras</h2>
+  <p><strong>Fundamento teórico:</strong></p>
+  <p>En un triángulo rectángulo, el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los catetos:</p>
+  <p><strong>Fórmula:</strong> a² + b² = c²</p>
+  <p><strong>Ejemplo con aplicación:</strong></p>
+  <p>Si un triángulo tiene catetos de 3 cm y 4 cm, la hipotenusa es:</p>
+  <p>c = √(3² + 4²) = √(9 + 16) = √25 = 5 cm</p>
+  <h2>Imagen visual</h2>
+  <img src="https://www.neurochispas.com/wp-content/uploads/2021/06/ejemplos-del-teorema-de-pitagoras.png"
+    alt="Teorema de Pitágoras">
+  <p>Sea un triángulo rectángulo de catetos <strong>a</strong> y <strong>b</strong> e hipotenusa <strong>h</strong> (el
+    lado opuesto al ángulo recto). Entonces, el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los
+    catetos:</p>
+  <img class="imagen" src="https://www.matesfacil.com/pitagoras/teorema-Pitagoras.png" alt="Teorema de Pitágoras">
+
+  <h2>Recordemos que:</h2>
+  <ul>
+    <li>El triángulo es rectángulo porque tiene un ángulo recto, es decir, un ángulo de 90 grados ó π/2 radianes.</li>
+    <li>La hipotenusa es el lado opuesto al ángulo recto.</li>
+    <li>Las 3 últimas fórmulas anteriores se obtienen de la primera (haciendo la raíz cuadrada en ambos lados).</li>
+  </ul>
+
+  <div class="nota">
+    <p><strong>Nota:</strong> h siempre es mayor que los dos catetos, es decir, <strong>h &gt; a</strong> y <strong>h
+        &gt; b</strong>.</p>
+  </div>
+
+  <div class="curiosidades">
+    <h2>Curiosidades:</h2>
+    <ul>
+      <li>El teorema de Pitágoras es uno de los resultados más conocidos de las matemáticas y también uno de los más
+        antiguos. Existen cientos de demostraciones del mismo.</li>
+      <li>La pirámide de Kefrén (siglo XXVI a. C.) fue construida en base al llamado triángulo sagrado egipcio, que es
+        el triángulo rectángulo de lados 3, 4 y 5.</li>
+      <li>La comprensión del teorema es sencilla y tiene muchas aplicaciones en la vida cotidiana, como veremos en los
+        problemas de esta página. No obstante, también tiene sus aplicaciones en las matemáticas avanzadas.</li>
+    </ul>
+  </div>
+  <!-- Video -->
+  <div class="video-container">
+    <p>Video del tema:</p>
+    <iframe src="" frameborder="0" allowfullscreen></iframe>
+    <p class="creditos">Créditos: [Nombre del autor]</p>
+  </div>
+
+  <button onclick="mostrarSeccion('trigonometria')">Volver a Trigonometría</button>
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Ley de Senos -->
+<div id="ley_senos" class="content-section">
+  <h2>8. Ley de Senos</h2>
+  <p><strong>Fundamento teórico:</strong></p>
+  <p>La Ley de Senos establece una relación entre los lados y los ángulos opuestos de un triángulo cualquiera. Se
+    utiliza para resolver triángulos oblicuángulos, es decir, que no son rectángulos.</p>
+  <p><strong>Fórmula:</strong></p>
+  <p>a / sin A = b / sin B = c / sin C</p>
+  <p><strong>Ejemplo con aplicación:</strong></p>
+  <p>Dado un triángulo donde:</p>
+  <ul>
+    <li>a = 10 cm</li>
+    <li>A = 30°</li>
+    <li>B = 45°</li>
+  </ul>
+  <p>Calcular el lado b.</p>
+  <p>Aplicamos la Ley de Senos:</p>
+  <p>b = (a * sin B) / sin A</p>
+  <p>b = (10 * sin 45°) / sin 30°</p>
+  <p>b ≈ (10 * 0.7071) / 0.5 ≈ 14.14 cm</p>
+  <p>La ley de los senos es la relación entre los lados y ángulos de triángulos no rectángulos (oblicuos). Simplemente,
+    establece que la relación de la longitud de un lado de un triángulo al seno del ángulo opuesto a ese lado es igual
+    para todos los lados y ángulos en un triángulo dado.</p>
+
+  <p>En ∆ABC es un triángulo oblicuo con lados <strong>a</strong>, <strong>b</strong> y <strong>c</strong>, entonces:
+  </p>
+  <img
+    src="https://www.varsitytutors.com/assets/vt-hotmath-legacy/hotmath_help/topics/law-of-sines/law-of-sines-image001.gif"
+    alt="Ley de los Senos" class="imagen">
+  <img
+    src="https://www.varsitytutors.com/assets/vt-hotmath-legacy/hotmath_help/spanish/topics/law-of-sines/law-of-sines-image015.gif"
+    alt="Ley de los Senos" class="imagen">
+
+  <p>Para usar la ley de los senos necesita conocer ya sea dos ángulos y un lado del triángulo (AAL o ALA) o dos lados y
+    un ángulo opuesto de uno de ellos (LLA). Dese cuenta que para el primero de los dos casos usamos las mismas partes
+    que utilizó para probar la congruencia de triángulos en geometría, pero en el segundo caso no podríamos probar los
+    triángulos congruentes dadas esas partes. Esto es llamado el caso ambiguo y lo discutiremos más adelante.</p>
+
+  <h2>Ejemplo 1: Dado dos ángulos y un lado no incluído (AAL)</h2>
+  <p>Dado ∆ABC con A = 30°, B = 20° y a = 45 m. Encuentre el ángulo y los lados faltantes.</p>
+  <img
+    src="https://www.varsitytutors.com/assets/vt-hotmath-legacy/hotmath_help/topics/law-of-sines/law-of-sines-image016.gif"
+    alt="Ejemplo 1" class="imagen">
+
+  <p>El tercer ángulo del triángulo es:</p>
+  <p><strong>C = 180° – A – B = 180° – 30° – 20° = 130°</strong></p>
+  <p>Por la ley de los senos:</p>
+  <img src="https://www.varsitytutors.com/assets/vt-hotmath-legacy/hotmath_help/topics/law-of-sines/image001.gif"
+    alt="Ley de los senos" class="imagen">
+  <p>Por las propiedades de las proporciones:</p>
+  <img
+    src="https://www.varsitytutors.com/assets/vt-hotmath-legacy/hotmath_help/spanish/topics/law-of-sines/image002.gif"
+    alt="Propiedades de las proporciones" class="imagen">
+
+  <h2>Ejemplo 2: Dado dos ángulos y un lado incluído (ALA)</h2>
+  <p>Dado A = 42°, B = 75° y c = 22 cm. Encuentre el ángulo y los lados faltantes.</p>
+  <img
+    src="https://www.varsitytutors.com/assets/vt-hotmath-legacy/hotmath_help/topics/law-of-sines/law-of-sines-image017.gif"
+    alt="Ejemplo 2" class="imagen">
+
+  <p>El tercer ángulo del triángulo es:</p>
+  <p><strong>C = 180° – A – B = 180° – 42° – 75° = 63°</strong></p>
+  <p>Por la ley de los senos:</p>
+  <img
+    src="https://www.varsitytutors.com/assets/vt-hotmath-legacy/hotmath_help/topics/law-of-sines/law-of-sines-image005.gif"
+    alt="Ley de los senos" class="imagen">
+  <p>Por las propiedades de las proporciones:</p>
+  <img
+    src="https://www.varsitytutors.com/assets/vt-hotmath-legacy/hotmath_help/topics/law-of-sines/law-of-sines-image006.gif"
+    alt="Propiedades de las proporciones" class="imagen">
+  <h1>El Caso Ambiguo</h1>
+  <p>Si dos lados y un ángulo opuesto a uno de ellos son dados, tres posibilidades pueden ocurrir:</p>
+  <ol>
+    <li>No existe tal triángulo.</li>
+    <li>Dos triángulos diferentes existen.</li>
+    <li>Exactamente un triángulo existe.</li>
+  </ol>
+
+  <p>Considere un triángulo en el cual se le da <strong>a</strong>, <strong>b</strong> y <strong>A</strong>. (La altitud
+    <strong>h</strong> del vértice <strong>B</strong> al lado es igual a <strong>b sin A</strong>.)</p>
+
+  <h2>1. No existe tal triángulo</h2>
+  <p>Si <strong>A</strong> es agudo y <strong>a &lt; h</strong> o <strong>A</strong> es obtuso y <strong>a ≤ b</strong>.
+  </p>
+  <img
+    src="https://www.varsitytutors.com/assets/vt-hotmath-legacy/hotmath_help/spanish/topics/law-of-sines/law-of-sines-image021.gif"
+    alt="Caso 1" class="imagen">
+
+  <h2>2. Dos triángulos diferentes existen</h2>
+  <p>Si <strong>A</strong> es agudo y <strong>h &lt; a &lt; b</strong>.</p>
+  <img
+    src="https://www.varsitytutors.com/assets/vt-hotmath-legacy/hotmath_help/spanish/topics/law-of-sines/law-of-sines-image022.gif"
+    alt="Caso 2" class="imagen">
+
+  <h2>3. Exactamente un triángulo existe</h2>
+  <img
+    src="https://www.varsitytutors.com/assets/vt-hotmath-legacy/hotmath_help/spanish/topics/law-of-sines/law-of-sines-image023.gif"
+    alt="Caso 3" class="imagen">
+  </body>
+  </body>
+
+  <!-- Video -->
+  <div class="video-container">
+    <p>Video del tema:</p>
+    <iframe src="" frameborder="0" allowfullscreen></iframe>
+    <p class="creditos">Créditos: [Nombre del autor]</p>
+  </div>
+
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Ley de Cosenos -->
+<div id="ley_cosenos" class="content-section">
+  <h2>9. Ley de Cosenos</h2>
+  <p><strong>Fundamento teórico:</strong></p>
+  <p>La Ley de Cosenos es una generalización del Teorema de Pitágoras que se aplica a cualquier tipo de triángulo.
+    Relaciona la longitud de un lado con los otros dos lados y el coseno del ángulo opuesto al primer lado.</p>
+  <p><strong>Fórmula:</strong></p>
+  <p>c² = a² + b² - 2ab * cos C</p>
+  <p><strong>Ejemplo con aplicación:</strong></p>
+  <p>Dado un triángulo con:</p>
+  <ul>
+    <li>a = 5 cm</li>
+    <li>b = 7 cm</li>
+    <li>Ángulo C = 60°</li>
+  </ul>
+  <p>Calcular el lado c.</p>
+  <p>Aplicamos la Ley de Cosenos:</p>
+  <p>c² = 5² + 7² - 2 * 5 * 7 * cos 60°</p>
+  <p>c² = 25 + 49 - 70 * 0.5</p>
+  <p>c² = 74 - 35</p>
+  <p>c² = 39</p>
+  <p>c = √39 ≈ 6.24 cm</p>
+  <h1>La Ley de los Cosenos</h1>
+  <p>La ley de los cosenos es usada para encontrar las partes faltantes de un triángulo oblicuo (no rectángulo) cuando
+    ya sea las medidas de dos lados y la medida del ángulo incluído son conocidas (LAL) o las longitudes de los tres
+    lados (LLL) son conocidas. En cualquiera de estos casos, es imposible usar la ley de los senos porque no podemos
+    establecer una proporción que pueda resolverse.</p>
+
+  <h2>Fórmula</h2>
+  <p>La ley de los cosenos establece:</p>
+  <p><strong>c² = a² + b² – 2ab cos C</strong></p>
+  <p>Esto se parece al teorema de Pitágoras, excepto que para el tercer término, y si C es un ángulo recto, el tercer
+    término es igual a 0 porque el coseno de 90° es 0, y se obtiene el teorema de Pitágoras. Así, el teorema de
+    Pitágoras es un caso especial de la ley de los cosenos.</p>
+
+  <h2>Otras Formas</h2>
+  <p>La ley de los cosenos también puede establecerse como:</p>
+  <ul>
+    <li>b² = a² + c² – 2ac cos B</li>
+    <li>a² = b² + c² – 2bc cos A</li>
+  </ul>
+
+  <h2>Ejemplo 1: Dos lados y el ángulo incluído (LAL)</h2>
+  <p>Dado <strong>a = 11</strong>, <strong>b = 5</strong> y <strong>C = 20°</strong>. Encuentre el lado y ángulos
+    faltantes.</p>
+  <img
+    src="https://www.varsitytutors.com/assets/vt-hotmath-legacy/hotmath_help/topics/law-of-cosines/law-of-cosines-image002.gif"
+    alt="Ejemplo 1" class="imagen">
+  <p>Para encontrar los ángulos faltantes, ahora es más fácil usar la ley de los senos.</p>
+  <img
+    src="https://www.varsitytutors.com/assets/vt-hotmath-legacy/hotmath_help/topics/law-of-cosines/law-of-cosines-image003.gif"
+    alt="Ley de los Senos" class="imagen">
+
+  <h2>Ejemplo 2: Tres lados (LLL)</h2>
+  <p>Dado <strong>a = 8</strong>, <strong>b = 19</strong> y <strong>c = 14</strong>. Encuentre las medidas de los
+    ángulos.</p>
+  <img
+    src="https://www.varsitytutors.com/assets/vt-hotmath-legacy/hotmath_help/topics/law-of-cosines/law-of-cosines-image007.gif"
+    alt="Ejemplo 2" class="imagen">
+  <p>Es mejor encontrar el ángulo opuesto al lado más grande primero. En este caso, ese es el lado <strong>b</strong>.
+  </p>
+  <img
+    src="https://www.varsitytutors.com/assets/vt-hotmath-legacy/hotmath_help/topics/law-of-cosines/law-of-cosines-image004.gif"
+    alt="Lado B" class="imagen">
+  <!-- Video -->
+  <div class="video-container">
+    <p>Video del tema:</p>
+    <iframe src="" frameborder="0" allowfullscreen></iframe>
+    <p class="creditos">Créditos: [Nombre del autor]</p>
+  </div>
+
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<!-- Bibliografía -->
+<div id="bibliografia" class="content-section">
+  <h2>10. Bibliografía</h2>
+  <p>A continuación, se listan los videos y recursos utilizados en este manual:</p>
+  <ul>
+    <li>Video sobre Productos Notables - Autor: [Nombre del autor]</li>
+    <li>Video sobre Factorización - Autor: [Nombre del autor]</li>
+    <li>Video sobre Ecuaciones Lineales - Autor: [Nombre del autor]</li>
+    <li>Video sobre Ecuaciones Cuadráticas - Autor: [Nombre del autor]</li>
+    <li>Video sobre Círculo Unitario - Autor: [Nombre del autor]</li>
+    <li>Video sobre Medida de Ángulos - Autor: [Nombre del autor]</li>
+    <li>Video sobre Trigonometría de Triángulos Rectángulos - Autor: [Nombre del autor]</li>
+    <li>Video sobre Ley de Senos y Cosenos - Autor: [Nombre del autor]</li>
+    <!-- Añadir más referencias según corresponda -->
+  </ul>
+  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
+</div>
+
+<script>
+  function mostrarSeccion(seccionId) {
+    // Ocultar todas las secciones
+    document.querySelectorAll('.content-section').forEach(section => {
+      section.classList.remove('active');
+    });
+
+    // Mostrar la sección seleccionada
+    const seccion = document.getElementById(seccionId);
+    if (seccion) {
+      seccion.classList.add('active');
+    }
+    // Mostrar el menú si se selecciona
+    if (seccionId === 'menu') {
+      document.getElementById('menu').style.display = 'block';
+    } else {
+      document.getElementById('menu').style.display = 'none';
+    }
+  }
+
+  function mostrarSubtema(subtemaId) {
+    mostrarSeccion(subtemaId);
+    // Ocultar el menú al seleccionar un subtema
+    document.getElementById('menu').style.display = 'none';
+  }
+
+</script>
+</body>
+
+</html>
