@@ -9,10 +9,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  
 
 </head>
 
 <body>
+  <div class="logo-container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Escudo_de_la_universidad_Mariano_G%C3%A1lvez_Guatemala.svg/250px-Escudo_de_la_universidad_Mariano_G%C3%A1lvez_Guatemala.svg.png" alt="Logo UMG">
+    <p>Nombre: Mabelin Rosivel Sarceño Castillo</p>
+    <p>Carnet: 5190-24-6764</p>
+    <p>Ingeniería en Sistemas</p>
+  </div>
+
+  <style>
+    .logo-container {
+        position: fixed;
+        top: 5px;
+        right: 5px;
+        width: 60px;
+        text-align: center;
+        font-size: 8px;
+        color: #333;
+        border: 1px solid #ddd;
+        padding: 3px;
+        border-radius: 3px;
+        background-color: #f9f9f9;
+    }
+    .logo-container img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 3px;
+    }
+  </style>
 
   <div class="content-section active" id="inicio">
     <h1>Diario Matemático</h1>
@@ -30,8 +58,8 @@
     <button onclick="mostrarSeccion('trigonometria')">7. Trigonometría de Triángulos Rectángulos</button>
     <button onclick="mostrarSeccion('ley_senos')">8. Ley de Senos</button>
     <button onclick="mostrarSeccion('ley_cosenos')">9. Ley de Cosenos</button>
-    <button onclick="mostrarSeccion('bibliografia')">10. Bibliografía</button>
     <button onclick="mostrarSeccion('introduccion')">Video resolución de polinomios</button>
+    <button onclick="mostrarSeccion('Bbibliografias')">10. Bibliografias</button>
   </div>
 
   <div id="introduccion" class="content-section">
@@ -58,6 +86,7 @@
     <p><b>Los productos notables son expresiones algebraicas que vienen de un producto que conocemos porque sigue reglas
         fijas y cuyo resultado puede ser escrito por simple inspección, es decir, sin verificar la multiplicación. Estas
         operaciones son fáciles de recordar sin necesidad de efectuar la multiplicación correspondiente.</p>
+    
 </body>
 </p>
 <!-- Video -->
@@ -66,7 +95,18 @@
 <div class="video-container">
   <!-- Aquí puedes insertar el enlace del video de YouTube -->
   <iframe src="" frameborder="0" allowfullscreen></iframe>
+  <h2>Características de los Productos Notables</h2>
+  <ul>
+      <li>Los productos notables permiten simplificar cálculos algebraicos complejos de manera rápida y eficiente.</li>
+      <li>Son fórmulas que simplifican algunas multiplicaciones especiales entre polinomios.</li>
+      <li>Su aplicación cumple ciertas reglas para casos específicos de productos de expresiones algebraicas.</li>
+      <li>Para cada producto notable, existe una fórmula para factorizar una expresión algebraica y viceversa.</li>
+      <li>Su utilidad se resume en que permiten simplificar ciertos procesos matemáticos sin tener que aplicar un algoritmo de multiplicación.</li>
+      <li>Dominar los productos notables prepara el terreno para la comprensión de conceptos más avanzados en álgebra y matemáticas en general.</li>
+  </ul>
+
   <p class="creditos">Créditos: [Prof. Alex. Autor de video]</p>
+  
 </div>
 <button onclick="mostrarSubtema('cuadrado_suma')">Ejemplo: Cuadrado de una Suma</button>
 <button onclick="mostrarSubtema('producto_suma_diferencia')">Ejemplo: Producto de una Suma por una
@@ -120,7 +160,7 @@
 
     <!-- Aquí puedes insertar el enlace del video de YouTube -->
     <iframe src="" frameborder="0" allowfullscreen></iframe>
-    <p class="creditos">Créditos: [Nombre del autor]</p>
+    <p class="creditos">Créditos: [Prof.Alex]</p>
   </div>
 
   <button onclick="mostrarSeccion('productos_notables')">Volver a Productos Notables</button>
@@ -177,7 +217,7 @@
     </body>
     <!-- Aquí puedes insertar el enlace del video de YouTube -->
     <iframe src="" frameborder="0" allowfullscreen></iframe>
-    <p class="creditos">Créditos: [Nombre del autor]</p>
+    <p class="creditos">Créditos: [  Prof.Alex]</p>
   </div>
 
   <button onclick="mostrarSeccion('productos_notables')">Volver a Productos Notables</button>
@@ -232,7 +272,7 @@
     <p>Video del tema:</p>
     <a href="https://youtu.be/X9DT2c1u_GU?si=xjPT2ocloidqfMRR" target="_blank">Ver Video</a>
     <iframe src="" frameborder="0" allowfullscreen></iframe>
-    <p class="creditos">Créditos: [Nombre del autor]</p>
+    <p class="creditos">Créditos: [Prof.Alex]]</p>
   </div>
 
   <button onclick="mostrarSeccion('productos_notables')">Volver a Productos Notables</button>
@@ -283,8 +323,14 @@
   <!-- Video -->
   <div class="video-container">
     <p>Video del tema:</p>
+    <h2>Mi Video de YouTube</h2>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fVlFxTQTmB4" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
     <iframe src="" frameborder="0" allowfullscreen></iframe>
-    <p class="creditos">Créditos: [Nombre del autor]</p>
+    <p class="creditos">Créditos: [Profe alex. autor del video]</p>
   </div>
 
   <button onclick="mostrarSeccion('factorizacion')">Volver a Factorización</button>
@@ -348,8 +394,12 @@
   <!-- Video -->
   <div class="video-container">
     <p>Video del tema:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pYA7L34w7VM" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
     <iframe src="" frameborder="0" allowfullscreen></iframe>
-    <p class="creditos">Créditos: [Nombre del autor]</p>
+    <p class="creditos">Créditos: [AlroMatematicas]</p>
   </div>
 
   <button onclick="mostrarSeccion('factorizacion')">Volver a Factorización</button>
@@ -385,8 +435,12 @@
   <!-- Video -->
   <div class="video-container">
     <p>Video del tema:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xZHGl-RUqHs" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
     <iframe src="" frameborder="0" allowfullscreen></iframe>
-    <p class="creditos">Créditos: [Nombre del autor]</p>
+    <p class="creditos">Créditos: [ProfeAlex]</p>
   </div>
 
   <button onclick="mostrarSeccion('factorizacion')">Volver a Factorización</button>
@@ -438,9 +492,14 @@
   <!-- Video -->
   <div class="video-container">
     <p>Video del tema:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/itgFqGg6UBI" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+
     <!-- Aquí puedes insertar el enlace del video de YouTube -->
     <iframe src="" frameborder="0" allowfullscreen></iframe>
-    <p class="creditos">Créditos: [Nombre del autor]</p>
+    <p class="creditos">Créditos: [Daniel carreón]</p>
   </div>
   <button onclick="mostrarSeccion('factorizacion')">Volver a Factorización</button>
   <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
@@ -466,6 +525,11 @@
   <!-- Video -->
   <div class="video-container">
     <p>Video del tema:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/X9DT2c1u_GU" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+
     <!-- Aquí puedes insertar el enlace del video de YouTube -->
     <iframe src="" frameborder="0" allowfullscreen></iframe>
     <p class="creditos">Créditos: [Nombre del autor]</p>
@@ -492,9 +556,14 @@
   <!-- Video -->
   <div class="video-container">
     <p>Video del tema:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/8rT0DZbYGEs" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+
     <!-- Aquí puedes insertar el enlace del video de YouTube -->
     <iframe src="" frameborder="0" allowfullscreen></iframe>
-    <p class="creditos">Créditos: [Nombre del autor]</p>
+    <p class="creditos">Créditos: [Daniel Carreón]</p>
   </div>
 
   <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
@@ -505,6 +574,7 @@
   <h2>4. Resolución de Ecuaciones Cuadráticas</h2>
   <p><strong>Fundamento teórico:</strong></p>
   <p>Las ecuaciones cuadráticas tienen la forma ax² + bx + c = 0 y pueden resolverse mediante varios métodos:</p>
+  
   <button onclick="mostrarSubtema('completacion_cuadrados')">4.a Completación de Cuadrados</button>
   <button onclick="mostrarSubtema('formula_cuadratica')">4.b Fórmula Cuadrática</button>
   <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
@@ -533,9 +603,14 @@
   <!-- Video -->
   <div class="video-container">
     <p>Video del tema:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/51Mjg1OVjTo" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+
     <!-- Aquí puedes insertar el enlace del video de YouTube -->
     <iframe src="" frameborder="0" allowfullscreen></iframe>
-    <p class="creditos">Créditos: [Nombre del autor]</p>
+    <p class="creditos">Créditos: [ProfeAlex]</p>
   </div>
 
   <button onclick="mostrarSeccion('resolucion_ecuaciones')">Volver a Resolución de Ecuaciones</button>
@@ -564,9 +639,14 @@
   <!-- Video -->
   <div class="video-container">
     <p>Video del tema:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BxrJmKdPHRs" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+
     <!-- Aquí puedes insertar el enlace del video de YouTube -->
     <iframe src="" frameborder="0" allowfullscreen></iframe>
-    <p class="creditos">Créditos: [Nombre del autor]</p>
+    <p class="creditos">Créditos: [ProfeAlex]</p>
   </div>
 
   <button onclick="mostrarSeccion('resolucion_ecuaciones')">Volver a Resolución de Ecuaciones</button>
@@ -652,7 +732,7 @@
   <button onclick="mostrarSubtema('relacion_radianes_grados')">6.b Relación entre Radianes y Grados</button>
   <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
 </div>
-
+ 
 <!-- Medida en Radianes -->
 <div id="medida_radianes" class="content-section">
   <h2>6.a Medida en Radianes</h2>
@@ -695,9 +775,14 @@
   <!-- Video -->
   <div class="video-container">
     <p>Video del tema:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/seR9VVW4DaI" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+
     <!-- Aquí puedes insertar el enlace del video de YouTube -->
     <iframe src="" frameborder="0" allowfullscreen></iframe>
-    <p class="creditos">Créditos: [Nombre del autor]</p>
+    <p class="creditos">Créditos: [ProfeAlex]</p>
   </div>
 
   <button onclick="mostrarSeccion('medida_angulos')">Volver a Medida de Ángulos</button>
@@ -745,9 +830,14 @@
   <!-- Video -->
   <div class="video-container">
     <p>Video del tema:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/seR9VVW4DaI" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
+
     <!-- Aquí puedes insertar el enlace del video de YouTube -->
     <iframe src="" frameborder="0" allowfullscreen></iframe>
-    <p class="creditos">Créditos: [Nombre del autor]</p>
+    <p class="creditos">Créditos: [ProfeAlex]</p>
   </div>
 
   <button onclick="mostrarSeccion('medida_angulos')">Volver a Medida de Ángulos</button>
@@ -800,6 +890,12 @@
     ángulo recto. Estos lados están marcados en la <a
       href="https://openstax.org/apps/archive/20240910.161227/resources/e1b023ddf6ba031d5a703f4d8ab221050e0a2ede">Figura
       2</a>.</p>
+  <h3>Autor: Profe Alex</h3>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/nGS1glnproM" 
+          title="YouTube video player" frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+
   <button onclick="mostrarSubtema('razones_trigonometricas')">7.a Razones Trigonométricas</button>
   <button onclick="mostrarSubtema('teorema_pitagoras')">7.b Teorema de Pitágoras</button>
   <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
@@ -904,9 +1000,14 @@
   <!-- Video -->
   <div class="video-container">
     <p>Video del tema:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/CRg5jQRj1Hg" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+
     <!-- Aquí puedes insertar el enlace del video de YouTube -->
     <iframe src="" frameborder="0" allowfullscreen></iframe>
-    <p class="creditos">Créditos: [Nombre del autor]</p>
+    <p class="creditos">Créditos: [ProfeAlex]</p>
   </div>
 
   <button onclick="mostrarSeccion('trigonometria')">Volver a Trigonometría</button>
@@ -956,8 +1057,13 @@
   <!-- Video -->
   <div class="video-container">
     <p>Video del tema:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/eTEBvBIz8Ok" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+
     <iframe src="" frameborder="0" allowfullscreen></iframe>
-    <p class="creditos">Créditos: [Nombre del autor]</p>
+    <p class="creditos">Créditos: [DanielCarreón]</p>
   </div>
 
   <button onclick="mostrarSeccion('trigonometria')">Volver a Trigonometría</button>
@@ -1068,8 +1174,12 @@
   <!-- Video -->
   <div class="video-container">
     <p>Video del tema:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/nCK3jKq_Iyk" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
     <iframe src="" frameborder="0" allowfullscreen></iframe>
-    <p class="creditos">Créditos: [Nombre del autor]</p>
+    <p class="creditos">Créditos: [DanielCarreón]</p>
   </div>
 
   <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
@@ -1142,30 +1252,17 @@
   <!-- Video -->
   <div class="video-container">
     <p>Video del tema:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/x4sCCs5q8aA" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen></iframe>
     <iframe src="" frameborder="0" allowfullscreen></iframe>
-    <p class="creditos">Créditos: [Nombre del autor]</p>
+    <p class="creditos">Créditos: [ProfeAlex]</p>
   </div>
 
   <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
 </div>
 
-<!-- Bibliografía -->
-<div id="bibliografia" class="content-section">
-  <h2>10. Bibliografía</h2>
-  <p>A continuación, se listan los videos y recursos utilizados en este manual:</p>
-  <ul>
-    <li>Video sobre Productos Notables - Autor: [Nombre del autor]</li>
-    <li>Video sobre Factorización - Autor: [Nombre del autor]</li>
-    <li>Video sobre Ecuaciones Lineales - Autor: [Nombre del autor]</li>
-    <li>Video sobre Ecuaciones Cuadráticas - Autor: [Nombre del autor]</li>
-    <li>Video sobre Círculo Unitario - Autor: [Nombre del autor]</li>
-    <li>Video sobre Medida de Ángulos - Autor: [Nombre del autor]</li>
-    <li>Video sobre Trigonometría de Triángulos Rectángulos - Autor: [Nombre del autor]</li>
-    <li>Video sobre Ley de Senos y Cosenos - Autor: [Nombre del autor]</li>
-    <!-- Añadir más referencias según corresponda -->
-  </ul>
-  <button onclick="mostrarSeccion('menu')">Volver al Menú</button>
-</div>
 
 <script>
   function mostrarSeccion(seccionId) {
